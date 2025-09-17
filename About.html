@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - ElectroMart</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Rokkitt:wght@700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    body { margin:0; font-family:"Montserrat", sans-serif; background:#f4f6f9; color:#333; }
+
+    /* Navbar */
+    header { background:#1e3a5f; }
+    .nav-container { max-width:1200px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; padding:15px 20px; color:#fff; }
+    .nav-container a.logo { font-size:24px; font-weight:700; text-decoration:none; color:#fff; }
+    nav ul { list-style:none; display:flex; margin:0; padding:0; gap:20px; }
+    nav ul li a { text-decoration:none; color:#fff; font-weight:600; }
+    nav ul li a:hover, nav ul li.active a { color:#ff9800; }
+
+    .search-box { display:flex; align-items:center; }
+    .search-box input { padding:6px 10px; border-radius:20px; border:none; outline:none; }
+    .search-box button { background:#ff9800; border:none; color:white; margin-left:6px; padding:6px 12px; border-radius:20px; cursor:pointer; }
+
+    /* About Section */
+    .about-container {
+      max-width: 900px;
+      margin: 50px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .about-container h1 {
+      text-align: center;
+      color: #1e3a5f;
+      margin-bottom: 20px;
+    }
+    .about-container p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #333;
+      text-align: justify;
+      margin-bottom: 15px;
+    }
+    .about-container img {
+      display: block;
+      max-width: 100%;
+      margin: 20px auto;
+      border-radius: 10px;
+    }
+
+    /* Footer */
+    footer { background:#111; color:#bbb; padding:30px 20px; margin-top:40px; }
+    .footer-container { max-width:1200px; margin:auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:20px; }
+    footer h4 { color:#fff; margin-bottom:10px; }
+    footer ul { list-style:none; padding:0; }
+    footer ul li { margin-bottom:8px; }
+    footer ul li a { color:#bbb; text-decoration:none; }
+    footer ul li a:hover { color:#ff9800; }
+    .copy { text-align:center; margin-top:20px; font-size:14px; color:#888; }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <div class="nav-container">
+      <a href="Home.html" class="logo">ElectroMart</a>
+      <nav>
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li class="active"><a href="About.html">About Us</a></li>
+          <li><a href="Register.html">Register</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="search-box">
+        <input type="search" placeholder="Search electrical items...">
+        <button><i class="fa fa-search"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <div class="about-container">
+    <h1>About ElectroMart</h1>
+    <p>
+      Welcome to <b>ElectroMart</b>, your one-stop shop for all electrical products! 
+      From bulbs, switches, and boards to advanced home appliances, 
+      we aim to provide you with quality products at affordable prices.
+    </p>
+    <p>
+      Our mission is to make shopping for electrical items easier, faster, and more reliable. 
+      With a user-friendly website and secure shopping experience, 
+      ElectroMart is committed to bringing convenience right to your fingertips.
+    </p>
+    <img src="images/shop.jpeg" alt="ElectroMart Image">
+    <p>
+      Thank you for choosing ElectroMart – powering your homes and businesses with trust and excellence.
+    </p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div>
+        <h4>About ElectroMart</h4>
+        <p>Your one-stop shop for all electrical essentials at best prices.</p>
+      </div>
+      <div>
+        <h4>Customer Care</h4>
+        <ul>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Returns/Exchange</a></li>
+          <li><a href="#">Warranty</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Information</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#">Delivery Info</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>ElectroMart HQ, Jaysingpur</li>
+          <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+          <li><a href="mailto:info@electromart.com">info@electromart.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">
+      &copy; <script>document.write(new Date().getFullYear());</script> ElectroMart. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
